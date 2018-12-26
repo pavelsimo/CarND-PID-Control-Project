@@ -54,7 +54,7 @@ the car will constantly overshoot the center line, in a zig-zag pattern.
 ### Integral Control
 
 The integral control (I) helps to control systematic bias in the controllers. If used along
-the car will take a circular trajectory. I couldn't observe bias in the controllers of the simulator, thus the integral controller it was not added to the hyper-parameters.
+the car will take a circular trajectory. I couldn't observe a bias in the controllers of the simulator, thus the integral controller it was not added to the hyper-parameters.
 
 ### Derivative Control
 
@@ -62,12 +62,12 @@ The derivative control (D) smooth the proportional controller transition to the 
 
 ## Hyper-parameters Tuning
 
-The parameters were choose manually, the tuning strategy below:
+The parameters were chosen manually, the tuning strategy below:
 
-First I decided to tuned the proportional controller, since this control tends to
-overshoot the center line, I tried to pick a value were the oscillation amplitude was small.
+First I decided to tune the proportional controller since this control tends to
+overshoot the center line, I tried to pick a value where the oscillation amplitude was small.
 
-Secondly, I tuned the derivative control, since this smooth the proportional control tendency to overshoot.
+Secondly, I tuned the derivative control, since this smooth the proportional control tends to overshoot.
 
 Third, noticed was not necessary to tune the integral controller, since couldn't observe any bias in the simulator controllers.
 
